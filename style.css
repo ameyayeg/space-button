@@ -9,8 +9,11 @@
 body {
   min-height: 100vh;
   display: grid;
-  place-content: center;
+  grid-template-rows: 90% 10%;
   background: hsl(230 35% 7%);
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 body.light {
@@ -29,7 +32,8 @@ body.light {
 }
 
 .btn {
-  position: relative;
+  align-content: center;
+  border: 50px solid red;
   font-family: 'Bellefair', serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -54,4 +58,24 @@ body.light {
 .btn:hover {
   box-shadow: 0px 0px 15px 50px rgba(109, 109, 109, 1);
   opacity: 1;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 1em;
+  font-size: 1.2rem;
+  margin-top: 1em;
+}
+
+footer .twitter {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .twitter:hover,
+footer .twitter:focus {
+  color: rebeccapurple;
 }
